@@ -1,9 +1,9 @@
 # 323 3-Radix-Sort<br />
-CSC 323-32: Project 3.1 <Radix Sort> (C++)<br />
-Preston Peck<br />
-Due date: Oct. 20, 2016 <br />
+### CSC 323-32: Project 3.1 <Radix Sort> (C++)<br />
+### Preston Peck<br />
+### Due date: Oct. 20, 2016 <br />
 
-**** Algorithm steps for radix sort:<br />
+#### **** Algorithm steps for radix sort:<br />
 
 Step 0: inFile <-- open the input file<br />
      0.1: Top <-- create a new stack<br />
@@ -58,7 +58,7 @@ Step 15: repeat step 9 to 14 until currentDigit >= longestStringLength<br />
 
 Step 16: print currentTable<br />
 
-INPUT<br />
+### INPUT<br />
 ccaabb bbaa a aabb zxc<br />
 rafael sebastain<br />
 jiaxin huan<br />
@@ -72,7 +72,7 @@ changjie joe kar kun<br />
 edward teng<br />
 xiao<br />
 
-OUTPUT<br />
+### OUTPUT<br />
 Table [0][97]: casablanca, a, bbaa<br />
 Table [0][98]: aabb, ccaabb<br />
 Table [0][99]: zxc<br />
