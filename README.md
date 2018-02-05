@@ -5,58 +5,58 @@
 
 #### **** Algorithm steps for radix sort:<br />
 
-Step 0: inFile <-- open the input file<br />
-     0.1: Top <-- create a new stack<br />
+**Step 0:** inFile <-- open the input file<br />
+     **0.1:** Top <-- create a new stack<br />
      
-Step 1: data <-- read a data from the input file<br />
-     1.1: newNode <-- create a new listNode for the data<br />
-     1.2: push (Top, newNode) <-- push newNode onto the top of the stack<br />
-     1.3: longestStringLength <-- you need to keep tract of string length of the data here<br />
+**Step 1:** data <-- read a data from the input file<br />
+     **1.1:** newNode <-- create a new listNode for the data<br />
+     **1.2:** push (Top, newNode) <-- push newNode onto the top of the stack<br />
+     **1.3:** longestStringLength <-- you need to keep tract of string length of the data here<br />
      
-Step 2: repeat step 1 until file is empty<br />
+**Step 2:** repeat step 1 until file is empty<br />
 
-Step 3: print the stack<br />
+**Step 3:** print the stack<br />
 
-Step 4: create hashTable[2][tableSize] <br />
+**Step 4:** create hashTable[2][tableSize] <br />
 
-Step 5: currentDigit <-- 0<br />
-     5.1: currentTable <-- 0<br />
+**Step 5:** currentDigit <-- 0<br />
+     **5.1:** currentTable <-- 0<br />
      
-Step 6: node <-- pop from the stack<br />
-     6.1: padString (node)<br />
-     6.2: val <-- getVal (node, currentDigit)<br />
-     6.3: hashIndex <-- hashIndex (val)<br />
-     6.4: addTail (hashTable[currentTable][ hashIndex])<br />
+**Step 6:** node <-- pop from the stack<br />
+     **6.1:** padString (node)<br />
+     **6.2:** val <-- getVal (node, currentDigit)<br />
+     **6.3:** hashIndex <-- hashIndex (val)<br />
+     **6.4:** addTail (hashTable[currentTable][ hashIndex])<br />
      
-Step 7: repeat step 6 until stack is empty<br />
+**Step 7:** repeat step 6 until stack is empty<br />
 
-Step 8:  printTable (HashTable[currentTable] <br />
+**Step 8:**  printTable (HashTable[currentTable] <br />
 
-Step 9: currentDigit++<br />
-     9.1: currentTable <-- 1<br />
-     9.2: previousTable <-- 0<br />
-     9.3: currentQueue <-- 0<br />
+**Step 9:** currentDigit++<br />
+     **9.1:** currentTable <-- 1<br />
+     **9.2:** previousTable <-- 0<br />
+     **9.3:** currentQueue <-- 0<br />
      
-Step 10: node <-- deleteHead from the currentQueue in<br />
-     10.1: hashTable[previousTable][currentQueue]<br />
-     10.2: val <-- getVal (node, currentDigit)<br />
-     10.3: hashIndex <-- hashIndex (val) <br />
-     10.4: addTail (hashTable[currentTable][ hashIndex])<br />
+**Step 10:** node <-- deleteHead from the currentQueue in<br />
+     **10.1:** hashTable[previousTable][currentQueue]<br />
+     **10.2:** val <-- getVal (node, currentDigit)<br />
+     **10.3:** hashIndex <-- hashIndex (val) <br />
+     **10.4:** addTail (hashTable[currentTable][ hashIndex])<br />
      
-Step 11:  repeat steps 10 until the currentQueue is empty<br />
+**Step 11:**  repeat steps 10 until the currentQueue is empty<br />
 
-Step 12: currentQueue ++<br />
+**Step 12:** currentQueue ++<br />
 
-Step 13: repeat step 10 to step 12 until currentQueue >= tableSize - 1<br />
+**Step 13:** repeat step 10 to step 12 until currentQueue >= tableSize - 1<br />
 
-Step 14: temp <-- currentTable<br />
-     14.1: currentTable <-- previousTable<br />
-     14.2: previousTable <-- temp<br />
-     14.3: currentQueue <-- 0<br />
+**Step 14:** temp <-- currentTable<br />
+     **14.1:** currentTable <-- previousTable<br />
+     **14.2:** previousTable <-- temp<br />
+     **14.3:** currentQueue <-- 0<br />
      
-Step 15: repeat step 9 to 14 until currentDigit >= longestStringLength<br />
+**Step 15:** repeat step 9 to 14 until currentDigit >= longestStringLength<br />
 
-Step 16: print currentTable<br />
+**Step 16:** print currentTable<br />
 
 ### INPUT<br />
 ccaabb bbaa a aabb zxc<br />
